@@ -2,7 +2,6 @@
 
 ******NEWS TRACKER APPLICATION******
 
-**Project Domain : **Cloud Application Devlopment
 
 **Team ID** : PNT2022TMID27418
 
