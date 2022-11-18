@@ -7,10 +7,10 @@
 
 **TEAM MEMBERS**
 
-1.Deepak
+1.Lokesh
 
-2.Hariharan
+2.Jindat Baradia
 
-3.Jindat Baradia
+3.Hariharan
 
-4.Lokesh
+4.Deepak
