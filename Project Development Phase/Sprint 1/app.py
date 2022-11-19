@@ -5,8 +5,7 @@ import re
 app = Flask(__name__)
 app.secret_key = 'a'
 
-conn = ibm_db.connect(
-"DATABASE=bludb;HOSTNAME=ba99a9e6-d59e-4883-8fc0-d6a8c9f7a08f.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=31321;USERNAME=nnr87238;PASSWORD=PUmIqXYukgkiGmGq;SECURITY=SSL;SSLSERVERCERTIFICATE=DigiCertGlobalRootCA.crt;", "", "")
+#conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=ba99a9e6-d59e-4883-8fc0-d6a8c9f7a08f.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=31321;USERNAME=nnr87238;PASSWORD=PUmIqXYukgkiGmGq;SECURITY=SSL;SSLSERVERCERTIFICATE=DigiCertGlobalRootCA.crt;", "", "")
 @app.route("/", methods=['GET', 'POST'])
 def register():
     msg = ''
@@ -65,7 +64,7 @@ def login():
             return render_template('dashboard.html', msg=msg)
         else:
             msg = 'Incorrect username / password !'
-            return render_template('login.html', msg=msg)
+            return render_template('index.html', msg=msg)
 
 
 if __name__ == '__main__':
